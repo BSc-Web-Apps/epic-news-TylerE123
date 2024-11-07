@@ -14,10 +14,14 @@ export default function App() {
 
 	return (
 		<Document nonce={nonce}>
-			<div className="flex h-screen flex-col justify-between">
+			<div className="flex h-screen flex-col justify-between bg-white">
 				<div className="flex-1">
-					<main className="grid h-full place-items-center">
-						<h1 className="text-mega">Welcome to Epic News!</h1>
+					<main className="grid h-full place-items-center text-blue-600">
+						<h1 className="text-mega">Your Journey Begins!</h1>
+						<p className="text-base text-gray-600 md:text-lg lg:text-2xl">
+							Welcome to Epic News, where the latest developments in tech are
+							found.
+						</p>
 					</main>
 				</div>
 			</div>
