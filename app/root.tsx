@@ -22,6 +22,9 @@ export default function App() {
 							Welcome to Epic News, where the latest developments in tech are
 							found.
 						</p>
+						<button className="bg-blue-600 px-8 py-4 text-white hover:bg-green-600 hover:px-10 hover:py-5">
+							Click me
+						</button>
 					</main>
 				</div>
 			</div>
