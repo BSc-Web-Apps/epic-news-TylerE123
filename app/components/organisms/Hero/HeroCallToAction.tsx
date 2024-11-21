@@ -13,11 +13,13 @@ const HeroCallToAction = ({
 }: HeroCallToActionProps) => {
 	return (
 		<div
-			className={`md:mx-auto md:flex md:max-w-6xl ${
-				imageRight && 'md:flex-row-reverse'
+			className={`md:mx-auto md:flex ${
+				imageRight && 'bg-gray-500 md:flex-row-reverse'
 			}`}
 		>
 			<div className="relative flex h-96 items-center justify-center overflow-hidden md:h-[32rem] md:w-1/2">
+				<h2 className="text-h2">Welcome to Epic News</h2>
+				<p className="text-lg">Keep up to date with the latest tech news.</p>
 				<img
 					src={image}
 					alt="A hero with a call to action."
