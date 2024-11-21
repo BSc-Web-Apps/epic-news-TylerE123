@@ -46,7 +46,7 @@ export default function App() {
 							</HeroCallToAction>
 						</div>
 
-						<div className="container mx-auto py-8">
+						<div className="container mx-auto flex justify-between py-8">
 							<NewsCard />
 							<NewsCard />
 							<NewsCard />
