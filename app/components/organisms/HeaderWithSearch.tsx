@@ -15,6 +15,7 @@ export default function HeaderWithSearch() {
 				<div className="flex flex-1 justify-center gap-8">
 					<Link
 						to="/news"
+						prefetch="intent"
 						className="text-sm font-semibold text-muted-foreground transition hover:text-foreground"
 					>
 						News
