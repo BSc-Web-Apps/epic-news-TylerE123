@@ -1,5 +1,5 @@
 import { type LinksFunction } from '@remix-run/node'
-import { Link, useLoaderData } from '@remix-run/react'
+import { Outlet, Link, useLoaderData } from '@remix-run/react'
 import heroImage from '~/assets/jpg/sample-hero.jpg'
 import Document from '~/components/shared-layout/Document'
 import ThemeSwitch from '~/components/shared-layout/ThemeSwitch'
@@ -29,7 +29,7 @@ export default function App() {
 			<div className="flex h-screen flex-col justify-between">
 				<HeaderWithSearch />
 				<div className="flex-1">
-					<main className="h-full">
+					{/* <main className="h-full">
 						<div className="">
 							<HeroCallToAction image={heroImage} imageRight={true}>
 								<div className="flex h-full flex-1 flex-col justify-between p-16">
@@ -53,7 +53,8 @@ export default function App() {
 							<NewsCard />
 							<NewsCard />
 						</div>
-					</main>
+					</main> */}
+					<Outlet />
 				</div>
 				<div className="container flex justify-between pb-5">
 					<ThemeSwitch userPreference={data.requestInfo.userPrefs.theme} />
