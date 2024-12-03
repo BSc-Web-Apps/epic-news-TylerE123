@@ -33,9 +33,6 @@ export default function Index() {
 				<NewsCard />
 				<NewsCard />
 			</div>
-			<h2 className="text-4xl">
-				Select a news category from the choices above...
-			</h2>
 		</main>
 	)
 }
