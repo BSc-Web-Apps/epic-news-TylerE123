@@ -101,6 +101,7 @@ export async function action({ request }: ActionFunctionArgs) {
 		id: articleId,
 		title,
 		content,
+		categoryId,
 		imageUpdates = [],
 		newImages = [],
 	} = submission.value
@@ -112,6 +113,7 @@ export async function action({ request }: ActionFunctionArgs) {
 			ownerId: userId,
 			title,
 			content,
+			categoryId,
 			images: { create: newImages },
 		},
 		update: {
